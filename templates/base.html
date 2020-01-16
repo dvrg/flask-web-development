@@ -12,6 +12,8 @@
 
 <body>
     {% block body %}
+    {% include 'navbar.html' %}
+    {% block content %} {% endblock %}
     {% endblock %}
 
     {% block script %}
