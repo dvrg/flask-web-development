@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <a href="{{ url_for('user', name='David')}}">User David</a>
+    </div>
+</div>
+{% endblock %}
