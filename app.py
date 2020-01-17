@@ -1,6 +1,10 @@
 from flask import Flask, render_template
+from flask_moment import Moment
+from datetime import datetime
+
 
 app = Flask(__name__)
+moment = Moment(app)
 
 @app.route('/')
 def index():
@@ -9,7 +13,9 @@ def index():
 @app.route('/user/<name>')
 def user(name):
     return render_template(
-        'user.html', name=name
+        'user.html', 
+        name=name,
+        current_time=datetime.now()
         )
 
 @app.errorhandler(404)
