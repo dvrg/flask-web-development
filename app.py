@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'ini adalah secret key'
 moment = Moment(app)
 
 @app.route('/')
