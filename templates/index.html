@@ -4,7 +4,13 @@
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <a href="{{ url_for('user', name='David')}}">User David</a>
+        <h1>Hello, World!</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.nama.label() }}
+            {{ form.nama() }}
+            {{ form.submit() }}
+        </form>
     </div>
 </div>
 {% endblock %}

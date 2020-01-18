@@ -1,15 +1,20 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for, session
 from flask_moment import Moment
 from datetime import datetime
+from forms import User
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'ini adalah secret key'
 moment = Moment(app)
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def index():
-    return render_template('index.html')
+    form = User()
+    if form.validate_on_submit():
+        session['nama'] = form.nama.data
+        return redirect(url_for('user', name=session.get['nama']))
+    return render_template('index.html', form=form)
 
 @app.route('/user/<name>')
 def user(name):
