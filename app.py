@@ -2,10 +2,14 @@ from flask import Flask, render_template, redirect, url_for, session, flash
 from flask_moment import Moment
 from datetime import datetime
 from forms import User
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'ini adalah secret key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:cintakita@localhost/flask'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 moment = Moment(app)
 
 @app.route('/', methods=['GET','POST'])
