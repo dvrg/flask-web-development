@@ -46,18 +46,18 @@ def index():
         else:
             session['known'] = True
         session['name'] = form.name.data
-        form.nama.data = ' '
+        form.name.data = ' '
         return redirect(url_for('index'))
     return render_template('index.html', form=form, name=session.get('name'), known=session.get('known', False))
 
 @app.route('/user/<name>', methods=['GET', 'POST'])
 def user(name):
-    form = User()
+    form = UserForm()
     if form.validate_on_submit():
         old_name = session.get('name')
         if old_name is not None and old_name != form.name.data:
             flash('Wow, kamu telah mengganti nama kamu!')
-        session['nama'] = form.nama.data
+        session['name'] = form.nama.data
         return redirect(url_for('user', name=session.get('name')))
     return render_template(
         'user.html', 
@@ -73,3 +73,9 @@ def page_not_found(e):
 def internal_server_error(e):
     return render_template('500.html'), 500
 
+
+
+
+@app.shell_context_processor
+def make_shell_context():
+    return dict(db=db, Role=Role, User=User)
