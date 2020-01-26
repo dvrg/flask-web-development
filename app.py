@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, url_for, session, flash
 from flask_moment import Moment
 from datetime import datetime
 from forms import UserForm
+from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -11,6 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:cintakita@localhost/flask'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 moment = Moment(app)
+migrate = Migrate(app, db)
 
 class Role(db.Model):
     __tablename__ = 'roles'
