@@ -5,6 +5,11 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1>Hello, {% if name %}{{ name}}{% else %}World!{% endif %}</h1>
+        {% if not known %}
+            <p>Hallo, Apa Kabar?</p>
+        {% else %}
+            <p>Senang bertemu lagi.</p>
+        {% endif %}
         <form method="POST">
             {{ form.hidden_tag() }}
             {{ form.nama.label() }}

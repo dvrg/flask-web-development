@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, session, flash
 from flask_moment import Moment
 from datetime import datetime
-from forms import User
+from forms import UserForm
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -35,24 +35,33 @@ class User(db.Model):
 
 @app.route('/', methods=['GET','POST'])
 def index():
-    form = User()
+    form = UserForm()
     if form.validate_on_submit():        
-        session['nama'] = form.nama.data
-        return redirect(url_for('user', name=session.get('nama')))
-    return render_template('index.html', form=form, name=session.get('nama'))
+        user = User.query.filter_by(username=form.name.data).first()
+        if user is None:
+            user = User(username=form.name.data)
+            db.session.add(user)
+            db.session.commit()
+            session['known'] = False
+        else:
+            session['known'] = True
+        session['name'] = form.name.data
+        form.nama.data = ' '
+        return redirect(url_for('index'))
+    return render_template('index.html', form=form, name=session.get('name'), known=session.get('known', False))
 
 @app.route('/user/<name>', methods=['GET', 'POST'])
 def user(name):
     form = User()
     if form.validate_on_submit():
-        old_name = session.get('nama')
-        if old_name is not None and old_name != form.nama.data:
+        old_name = session.get('name')
+        if old_name is not None and old_name != form.name.data:
             flash('Wow, kamu telah mengganti nama kamu!')
         session['nama'] = form.nama.data
-        return redirect(url_for('user', name=session.get('nama')))
+        return redirect(url_for('user', name=session.get('name')))
     return render_template(
         'user.html', 
-        name=session.get('nama'),
+        name=session.get('name'),
         current_time=datetime.now(), form=form
         )
 
