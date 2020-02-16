@@ -17,5 +17,5 @@ J : Tidak, ini module crash course, sehingga kamu bakal learning by doing.
 T : Saya ingin berkontribusi juga dalam modul ini, gimana caranya ? <br/>
 J : Cukup pull request dan create issue.
 
-T : Saya ingin belajar lebih intensif dengan tatap muka, apakah bisa ?
+T : Saya ingin belajar lebih intensif dengan tatap muka, apakah bisa ? <br/>
 J : Bisa, kami akan membuka kelas untuk hal tersebut dengan kuota peserta tertentu.
