@@ -2,7 +2,7 @@
 
 Buat kamu pemula yang ingin masuk ke Python dengan membuat aplikasi berbasis web (Crash Cource), kamu dapat mengikuti panduan pembuatan aplikasi yang kami buat berikut ini :
 
-[Lihat Module](https://github.com/dvrg/flask-web-development/wiki)
+UPDATE! Module pembelajaran ditransfer sepenuhnya ke [Sini](https://dvrg.gitbook.io/fwd/)
 
 ## Requirements
 1. Python > 3.6
