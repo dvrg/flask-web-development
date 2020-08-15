@@ -1,21 +1,45 @@
-# Module Pembelajaran Flask Bahasa Indonesia
+---
+description: Di Module Pembelajaran Flask Bahasa Indonesia
+---
 
-Buat kamu pemula yang ingin masuk ke Python dengan membuat aplikasi berbasis web (Crash Cource), kamu dapat mengikuti panduan pembuatan aplikasi yang kami buat berikut ini :
+# Selamat Datang
 
-UPDATE! Module pembelajaran ditransfer sepenuhnya ke [Sini](https://dvrg.gitbook.io/fwd/)
+## Pengantar
 
-## Requirements
-1. Python > 3.6
+Buat kamu pemula yang ingin masuk ke Python dengan membuat aplikasi berbasis web \(Crash Cource\), kamu dapat mengikuti panduan pada modul ini.
+
+Flask adalah framework yang standarnya cukup kecil sehingga disebut "microframework" dan cukup kecil sehingga setelah kamu terbiasa, kamu mungkin akan dapat membaca dan memahami kode sumbernya.
+
+Walaupun microframework bukan berarti lemah dari framework lainnya. Flask dirancang sebagai framework kerja yang dapat dibangun dari awal. Karena anda dapat memilih paket ekstensi yang kamu inginkan.
+
+Flask memiliki tiga dependensi utama. Subsistem routing, debugging, dan Web Server GateWay Interface \(WSGI\) yang berasal dari Werkzeug; dan dukungan template disediakan oleh jinja2. Dan command-line yang terintegrasi dengan Click. Semua dependensi ditulis oleh _**Armin Ronacher**_, penulis Flask.
+
+Kontributor proyek ini :
+
+* [dvrg](https://github.com/dvrg)
+* [salsabila](https://github.com/sabillaaa)
+* [teguhatma](https://github.com/teguhatma)
+
+## Persyaratan Sistem
+
+1. Python &gt; 3.6
 2. Git
-3. Favorite code editor (VSCode, Sublime)
-4. MySQL or Postgres
+3. Favorite Code Editor \(VSCode, Sublime\)
+4. MySQL or Postgress
 
-## FAQ
-T : Apakah saya harus punya basic python untuk menggunakan modul ini ? <br/>
-J : Tidak, ini module crash course, sehingga kamu bakal learning by doing.
+## Hal Yang Sering Ditanyakan
 
-T : Saya ingin berkontribusi juga dalam modul ini, gimana caranya ? <br/>
-J : Cukup pull request dan create issue.
+### Apakah saya harus punya basic python untuk menggunakan modul ini ? 
 
-T : Saya ingin belajar lebih intensif dengan tatap muka, apakah bisa ? <br/>
-J : Bisa, kami akan membuka kelas untuk hal tersebut dengan kuota peserta tertentu.
+Tidak, ini module crash course, sehingga kamu bakal learning by doing.
+
+### Saya ingin berkontribusi juga dalam modul ini, gimana caranya ?
+
+Cukup pull request dan create issue.
+
+### Saya ingin belajar lebih intensif dengan tatap muka, apakah bisa ?
+
+Bisa, kami akan membuka kelas untuk hal tersebut dengan kuota peserta tertentu.
+
+
+
