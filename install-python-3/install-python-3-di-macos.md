@@ -1,6 +1,6 @@
 # Install Python 3 di MacOs
 
-Sama seperti Linux, versi macOs sudah secara default ter-instal python namun python versi 2, sedangkan pada panduan ini Python yang digunakan adalah 3.8.1 maka kita akan melakukan upgrade pada python tersebut.
+Sama seperti Linux, versi MacOs sudah secara default ter-instal python namun python versi 2, sedangkan pada panduan ini Python yang digunakan adalah 3.6 maka kita akan melakukan upgrade python versi sebelumnya dengan python versi terbaru.
 
 Cara terbaik yang dapat kita lakukan untuk melakukan instalasi Python 3 pada macOs adalah menggunakan [Homebrew Package Manager](https://brew.sh/).
 
@@ -32,4 +32,3 @@ Ini akan mengunduh dan install versi Python terbaru. Setelah selesai, Python 3 s
 $ python3
 Python 3.8.1
 ```
-
