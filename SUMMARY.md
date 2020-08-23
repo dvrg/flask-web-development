@@ -13,5 +13,5 @@
 * [Database](database.md)
 * [Menggunakan Email](menggunakan-email.md)
 * [Struktur Flask Yang Lebih Besar](struktur-aplikasi-flask-yang-lebih-besar.md)
-* [Repository Kode](https://github.com/dvrg/flask-web-development)
+* [Repository Kode](https://github.com/dvrg/flask-web-development/tree/master/source-code)
 

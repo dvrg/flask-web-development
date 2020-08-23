@@ -32,3 +32,4 @@ Ini akan mengunduh dan install versi Python terbaru. Setelah selesai, Python 3 s
 $ python3
 Python 3.8.1
 ```
+
