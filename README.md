@@ -12,8 +12,6 @@ Buat kamu pemula yang ingin masuk ke Python dengan langsung membuat sebuah aplik
 
 [Flask](https://flask.palletsprojects.com/en/1.1.x/) merupakan ["microframework"](https://flask.palletsprojects.com/en/1.1.x/foreword/#what-does-micro-mean) python. Berbeda dengan pada umumnya framework, Flask dibuat untuk tujuan _build from scratch_, kebebasan dan extensible sehingga para pengguna dalam hal ini developer dapat membuat sebuah aplikasi website dengan 1 file saja, mengatur sesuka mereka struktur dan penamaan folder & file hingga penggunaan ekstension apa saja yang digunakan dalam sebuah projek Flask.
 
-Saat menggunakan Flask, Flask memiliki tiga dependensi utama yaitu subsistem routing, debugging, dan Web Server GateWay Interface \(WSGI\) yang berasal dari Werkzeug;  template enggine menggunakan jinja2; dan command-line yang terintegrasi dengan Click. Semua dependensi tersebut ditulis oleh _**Armin Ronacher**_, creator dari Flask "microframework".
-
 ## Persyaratan Sebelum Mengikuti Panduan
 
 Panduan ini tidak memiliki syarat khusus namun jika memiliki kemampuan sebagai berikut, kamu akan lebih mudah mengikuti panduan ini :
@@ -29,6 +27,8 @@ Adapun persyaratan sistem untuk dapat mengikuti panduan ini adalah sebagai berik
 4. Code editor seperti **Atom**, **VSCode**, **Sublime**
 5. **MySQL** ataupun **Postgress**
 6. **Docker**
+
+Khusus pengguna Windows (10), kami sarankan untuk menggunakan [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) agar dapat mengikuti panduan pada Gitbook ini.
 
 ## Lama Pengerjaan
 
