@@ -1,10 +1,53 @@
-# Kontribusi
+# Selamat Datang Kontributor :fire:
 
-Pertama-tama kami mengucapkan terima kasih atas kontribusi yang Anda lakukan :fire:
+Pertama-tama kami mengucapkan terima kasih atas kontribusi yang kamu lakukan, ada beberapa hal yang kamu dapat kontribusikan ke repositori ini, diataranya:
+1. Membuat & Membantu menjawab pertanyaan yang terdapat pada [Issue](https://github.com/dvrg/flask-web-development/issues?q=is%3Aissue+is%3Aopen+)
+2. Melakukan [Pull Request](https://github.com/dvrg/flask-web-development/compare)
+3. Memberikan sugesti perubahan ataupun penambahan materi
 
-Saat berkontribusi ke repositori ini, pertama-tama diskusikan perubahan yang ingin Anda lakukan melalui issue dengan pemilik repositori ini sebelum membuat perubahan.
+## Membuat Issue
+Buat issue berdasarkan issue template yang tersedia. Jangan lupa untuk bertanggung jawab terhadap issue yang dibuat, jika reviewer tidak menutup issue yang kamu buat padahal sudah solve, jangan lupa untuk di solve secara pribadi :smile:
 
-Harap perhatikan bahwa kami memiliki kode etik, harap ikuti dalam semua interaksi Anda dengan proyek ini.
+## Membuat Pull Request
+Untuk membantu berkontribusi pada repository ini, hendaknya kita melakukan pull request dengan sebelumnya melakukan Fork pada repository ini. Langkah-langkah berkontribusi pada repository ini:
+
+1. Lakukan fork pada repository ini
+2. Clone repository ke local
+```bash
+# ssh
+$ git clone git@github.com:<username>/flask-web-development
+
+# https
+$ https://github.com/<username>/flask-web-development
+```
+3. Masuk ke direktori repository
+```bash
+$ cd flask-web-development/
+```
+4. Buat branch baru selain master
+```bash
+$ git checkout -b nama-branch
+```
+5. Lakukan perubahan yang berkaitan dengan issue.
+6. Simpan perubahan
+7. Lakukan commit dari perubahan yang telah dibuat dengan format
+```bash
+$ git commit -am "Pesan perubahan"
+```
+Atau jika berkaitan dengan Issue, sertakan dengan nomer issue
+
+```bash
+$ git commit -am "Berkaitan dengan #11"
+```
+8. Push perubahan ke remote repository dan buat branch baru pada remote repository
+```bash
+$ git push --set-upstream origin nama-branch
+```
+9. Lakukan pull request dengan melakukan klik pada link yang tersedia pada command line setelah berhasil melakukan push, atau buat [Pull Request](https://github.com/dvrg/flask-web-development/compare) secara manual pada github
+10. Sertakan judul dan pesan pada pull request. Bila perlu gunakan format template yang sudah ada.
+11. Menunggu hasil review
+
+Harap perhatikan bahwa kami memiliki kode etik, harap ikuti dalam semua interaksi kamu dengan proyek ini.
 
 # Kode Etik Contributor Covenant
 
